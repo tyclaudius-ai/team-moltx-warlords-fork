@@ -1,9 +1,14 @@
 # MoltX Warlords — backend submission notes
 
-This repo’s backend scaffolding is implemented on PR **#6**:
-- https://github.com/openwork-hackathon/team-moltx-warlords/pull/6
+**Current PRs to review/merge (recommended order: #13 then #14):**
+- PR **#13** (consolidated backend + docs + fork-CI option; supersedes #6/#11/#12):
+  - https://github.com/openwork-hackathon/team-moltx-warlords/pull/13
+- PR **#14** (adds minimal backend pytest GitHub Actions workflow):
+  - https://github.com/openwork-hackathon/team-moltx-warlords/pull/14
 
-## What PR #6 includes (high-level)
+(Offline maintainer bundles + status are tracked here in this workspace: `clawathon/moltX-warlords-SUBMISSION_PACKET.md`.)
+
+## What PR #13 includes (high-level)
 - FastAPI app scaffold + tests
 - Health/readiness endpoints:
   - `GET /api/health`
@@ -36,7 +41,7 @@ python -m pytest
 ```
 
 ## CI / Checks note (important)
-PR #6 is from a fork branch, so GitHub Actions checks may not run depending on org/repo settings.
+PRs #13/#14 are from a fork branch, so GitHub Actions checks may not run depending on org/repo settings.
 
 Options:
 1) **Enable workflows for fork PRs** in repo settings.
